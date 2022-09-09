@@ -17,14 +17,24 @@
     --font-secondary: 'Fraunces', serif;
 
 }
-body {
-    background-color: var(--primary-color-cream);
+
+button { cursor: pointer; }
+
+button:hover {
+    transition: .5s;
+    background-color: var(--neutral-color-dark-blue);
 }
+
+body { background-color: var(--primary-color-cream); }
+
+main {
+    padding: 2rem;
+}
+
 .perfum-card {
     margin: auto;
-    max-width: 350px;
+    max-width: 320px;
     background-color: var(--neutral-color-white);
-    margin-top: 30px;
     border-radius: 10px;
     font-size: var(--font-size-paragraph);
     font-family: var(--font-primary);
@@ -34,18 +44,9 @@ body {
     overflow: hidden;
 }
 
-.perfum-card__header {
-    /*border-radius: inherit;*/
-}
-
 .perfum-card__header img {
     width: 100%;
     display: block;
-    /*
-    border-radius: inherit;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    */
 }
 
 .perfum-card__body {
@@ -98,4 +99,26 @@ body {
     justify-items: center;
     justify-content: center;
     gap: .5rem;
+}
+
+.attribution {
+    text-align: center;
+    font-size: .6em;
+    padding-bottom: 1rem ;
+}
+
+@media only screen and ( min-width:760px ) {
+    main {
+        padding-top: 6rem;
+    }
+    .perfum-card {
+        max-width: 500px;
+        display: flex;
+        flex-flow: row nowrap;       
+    }
+    .perfum-card__header { flex: 1;}
+    .perfum-card__header img {
+        height: 100%;
+    }
+    .perfum-card__body { flex: 1;}
 }

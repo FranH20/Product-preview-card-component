@@ -12,10 +12,12 @@
 
 </head>
 <body>
+  <main>
   <aside class="perfum-card">
-    <figure class="perfum-card__header">
-      <img src="images/image-product-mobile.jpg" alt="perfum-mobile">
-    </figure>
+    <picture class="perfum-card__header">
+      <source media="(min-width: 760px)" srcset="./images/image-product-desktop.jpg"/>
+      <img src="./images/image-product-mobile.jpg" alt="perfum-mobile">
+    </picture>
     <section class="perfum-card__body">
       <article class="perfum-card__information">
         <header class="perfum-card__title">
@@ -33,10 +35,10 @@
       </article>
     </section>
   </aside>
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+</main>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://github.com/FranH20">Franklin Huichi</a>.
+</div>
 </body>
 </html>
